@@ -3,10 +3,8 @@ package models;
 import coordinates.Coordinates;
 
 abstract class LandVehicle  implements Vehicle{
-    String fuelType = "Petrol";
-
-    @Override
-    abstract public Coordinates move(Coordinates coordinates);
+    private final String fuelType = "Petrol";
+    private final String type = "Land";
 
     @Override
     public String fuelType(){
@@ -14,5 +12,7 @@ abstract class LandVehicle  implements Vehicle{
     };
 
     @Override
-    abstract public int capacity();
+    public String vehicleType() {
+        return type;
+    }
 }

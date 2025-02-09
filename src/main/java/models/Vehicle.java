@@ -7,5 +7,7 @@ public interface Vehicle {
 
     String fuelType();
 
+    String vehicleType();
+
     int capacity();
 }
