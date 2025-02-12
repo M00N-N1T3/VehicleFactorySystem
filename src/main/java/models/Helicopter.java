@@ -3,6 +3,7 @@ package models;
 import coordinates.Coordinates;
 
 public class Helicopter extends AirVehicle{
+    private final String vehicle = "Car";
 
     @Override
     public Coordinates move(Coordinates coordinates) {
@@ -12,5 +13,9 @@ public class Helicopter extends AirVehicle{
     @Override
     public int capacity() {
         return 0;
+    }
+
+    public String getVehicle() {
+        return vehicle;
     }
 }

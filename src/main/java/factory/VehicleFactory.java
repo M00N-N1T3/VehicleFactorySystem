@@ -1,4 +1,4 @@
-package Factory;
+package factory;
 
 import models.*;
 import models.Exceptions.vehicleNotFound;
