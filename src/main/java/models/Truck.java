@@ -12,7 +12,7 @@ public class Truck extends LandVehicle{
 
     @Override
     public int capacity() {
-        return 0;
+        return 3;
     }
 
     public String getVehicle() {

@@ -12,7 +12,7 @@ public class Plane extends AirVehicle{
 
     @Override
     public int capacity() {
-        return 0;
+        return 50;
     }
 
     public String getVehicle() {

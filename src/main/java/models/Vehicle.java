@@ -9,5 +9,7 @@ public interface Vehicle {
 
     String vehicleType();
 
+    String getVehicle();
+
     int capacity();
 }

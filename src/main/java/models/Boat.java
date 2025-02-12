@@ -12,7 +12,7 @@ public class Boat extends WaterVehicle{
 
     @Override
     public int capacity() {
-        return 0;
+        return 8;
     }
 
     public String getVehicle() {
