@@ -2,7 +2,7 @@ package factory;
 
 import models.Vehicle;
 import org.junit.jupiter.api.Test;
-
+import models.Exceptions.vehicleNotFound;
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -62,5 +62,15 @@ public class VehicleFactoryTest {
         assertEquals(50, vehicle.capacity());
     }
 
+    @Test
+    public void throwsNoVehicleError(){
+
+
+        vehicleNotFound expect = assertThrows( vehicleNotFound.class ,() -> {
+            new VehicleFactory().getInstanceOf("UFO");
+        });
+
+        assertEquals("Error: vehicle not valid in the system.",expect.getMessage());
+    }
 
 }
