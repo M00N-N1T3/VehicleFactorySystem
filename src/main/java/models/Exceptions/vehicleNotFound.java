@@ -5,6 +5,6 @@ public class vehicleNotFound extends RuntimeException {
         super(message);
     }
     public vehicleNotFound(){
-        super("Error: vehicle not valid in the system");
+        super("Error: vehicle not valid in the system.");
     }
 }

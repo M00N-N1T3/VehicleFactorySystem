@@ -55,7 +55,7 @@ public class VehicleFactoryTest {
 
     @Test
     public void createPlane(){
-        Vehicle vehicle = new VehicleFactory().getInstanceOf("helicopter");
+        Vehicle vehicle = new VehicleFactory().getInstanceOf("plane");
         assertEquals("Plane",vehicle.getVehicle());
         assertEquals("Air",vehicle.vehicleType());
         assertEquals("Aviation Gasoline",vehicle.fuelType());
